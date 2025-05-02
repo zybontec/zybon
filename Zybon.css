@@ -525,9 +525,21 @@ section#nosotros ul li {
         margin: 5px 10px;
     }
 
+    .contacto {
+        padding: 0 10px;
+        overflow-x: hidden;
+    }
+    
     .contacto-img {
-        max-width: 90%;
-        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    body {
+        overflow-x: hidden;
     }
     
 }
