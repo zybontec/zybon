@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #003366, #00bcd4);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.container-gracias {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Animación fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.btn-regresar {
+    background-color: #00bcd4;
+    color: #003366;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-regresar:hover {
+    background-color: #ffffff;
+    color: #003366;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
