@@ -136,32 +136,34 @@
 
   <!-- Contacto -->
   <section id="contacto">
-    <h2>Contacto</h2>
+    <h2>Contáctanos</h2>
     <div class="contacto-container">
-
-        <!-- Imagen al lado -->
-        <div class="contacto-img">
-            <img src="ZYB.png" alt="Ilustración contacto">
-        </div>
-
-        <form action="https://formsubmit.co/zybon.tec@gmail.com" method="POST">
-            <input type="hidden" name="_next" value="gracias.html">
-            <input type="hidden" name="_captcha" value="false">
-            
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo" required>
-            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-            
-            <button type="submit">Enviar Mensaje</button>
-          </form>
-          
   
+      <!-- Imagen al lado -->
+      <div class="contacto-img">
+        <img src="ZYB.png" alt="Ilustración contacto">
+      </div>
+  
+      <!-- Formulario -->
+      <form id="formulario-contacto" action="https://formsubmit.co/zybon.tec@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="gracias.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+  
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+  
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+  
+      <!-- Botones rápidos -->
       <div class="botones-rapidos">
         <a href="https://wa.me/527225746189" target="_blank" class="btn-whatsapp">WhatsApp</a>
         <a href="mailto:zybon.tec@gmail.com" target="_blank" class="btn-correo">Enviar Correo</a>
       </div>
     </div>
-    
+  
     <div id="mensaje-exito" style="display:none;">¡Gracias por contactarnos!</div>
   </section>
   
@@ -214,7 +216,10 @@
       setTimeout(() => {
         mensajeExito.style.display = 'none';
       }, 3000);
+  
+      // También podrías usar fetch() aquí si quieres enviar sin redirigir
     });
   </script>
+  
 </body>
 </html>
