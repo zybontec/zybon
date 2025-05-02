@@ -490,11 +490,6 @@ section#nosotros ul li {
         font-size: 1.2em;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .principal h1 {
         font-size: 2.5em;
         top: 40%;
@@ -518,7 +513,26 @@ section#nosotros ul li {
     section#contacto {
         padding: 60px 15px;
     }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav li {
+        margin: 5px 10px;
+    }
+
+    .contacto-img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+    
 }
+
+
 
 
 .galeria-inicio {
