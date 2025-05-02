@@ -248,6 +248,12 @@ section#nosotros ul li {
         align-items: center;
     }
 
+    #hero {
+        padding: 40px 10px;
+        min-height: auto;
+    }
+    
+
     h2 {
         font-size: 5em;
     }
@@ -462,6 +468,13 @@ section#nosotros ul li {
     .principal p {
         font-size: 1.5em;
     }
+
+    .logo-lado {
+        height: 150px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -481,7 +494,32 @@ section#nosotros ul li {
         flex-direction: column;
         gap: 10px;
     }
+
+    .principal h1 {
+        font-size: 2.5em;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .principal p {
+        font-size: 1em;
+        top: 60%;
+        transform: translate(-50%, -50%);
+    }
+    
 }
+
+@media (max-width: 768px) {
+    section#inicio,
+    section#servicios,
+    section#portafolio,
+    section#nosotros,
+    section#contacto {
+        padding: 60px 15px;
+    }
+}
+
 
 .galeria-inicio {
     display: flex;
