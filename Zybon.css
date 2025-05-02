@@ -538,6 +538,12 @@ section#nosotros ul li {
         margin: 0 auto;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
     body {
         overflow-x: hidden;
     }
