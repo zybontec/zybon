@@ -144,18 +144,17 @@
         <img src="ZYB.png" alt="Ilustración contacto">
       </div>
   
-      <!-- Formulario -->
-      <form id="formulario-contacto" action="https://formsubmit.co/zybon.tec@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="gracias.html">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="box">
-  
-        <input type="text" name="name" placeholder="Tu nombre" required>
-        <input type="email" name="email" placeholder="Tu correo" required>
-        <textarea name="message" placeholder="Tu mensaje" required></textarea>
-  
-        <button type="submit">Enviar Mensaje</button>
-      </form>
+<form id="formulario-contacto" action="https://formspree.io/f/xkgrjzrr" method="POST">
+  <input type="text" name="name" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu correo" required>
+  <textarea name="message" placeholder="Tu mensaje" required></textarea>
+
+  <!-- Redirección opcional -->
+  <input type="hidden" name="_redirect" value="gracias.html">
+
+  <button type="submit" class="btn-contacto btn-enviar">Enviar Mensaje</button>
+</form>
+
   
       <!-- Botones rápidos -->
       <div class="botones-rapidos">
